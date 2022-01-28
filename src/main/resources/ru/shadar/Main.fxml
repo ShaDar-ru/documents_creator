@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="50.0" minWidth="250.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.shadar.controllers.MainController">
+    <AnchorPane prefHeight="600.0" prefWidth="800.0">
+        <Separator layoutY="425.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+        <AnchorPane fx:id="openPane" layoutY="35.0" prefHeight="54.0" prefWidth="800.0" AnchorPane.bottomAnchor="520.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0">
+            <TextField fx:id="txtFieldOpenFile" prefHeight="25.0" prefWidth="450.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="15.0" />
+            <Button fx:id="btnOpen" mnemonicParsing="false" text="Открыть" AnchorPane.leftAnchor="550.0" AnchorPane.topAnchor="15.0" />
+            <Button fx:id="btnGenerator" disable="true" layoutX="671.0" layoutY="16.0" mnemonicParsing="false" text="Сгенерировать" AnchorPane.leftAnchor="650.0" />
+        </AnchorPane>
+        <Separator layoutY="90.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+        <FlowPane fx:id="choiceBoxPane" disable="true" layoutY="90.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0">
+            <Group>
+                <Label layoutX="10.0" layoutY="5.0" text="Наименование" />
+                <ChoiceBox id="Name" fx:id="choice1" layoutX="125.0" prefWidth="150.0" />
+                <FlowPane.margin>
+                    <Insets bottom="10.0" left="50.0" right="5.0" top="10.0" />
+                </FlowPane.margin>
+            </Group>
+            <Group>
+                <Label layoutY="4.0" text="Адрес" />
+                <ChoiceBox id="Address" fx:id="choice2" layoutX="50.0" prefWidth="150.0" />
+                <FlowPane.margin>
+                    <Insets bottom="10.0" left="50.0" right="5.0" top="10.0" />
+                </FlowPane.margin>
+            </Group>
+            <Group>
+                <Label layoutY="4.0" text="Узел" />
+                <ChoiceBox id="Node" fx:id="choice3" layoutX="40.0" prefWidth="150.0" />
+                <FlowPane.margin>
+                    <Insets bottom="10.0" left="50.0" right="5.0" top="10.0" />
+                </FlowPane.margin>
+            </Group>
+            <Group>
+                <Label layoutY="2.0" text="Позиция" />
+                <ChoiceBox id="Position" fx:id="choice4" layoutX="65.0" prefWidth="150.0" />
+                <FlowPane.margin>
+                    <Insets bottom="10.0" left="50.0" right="5.0" top="10.0" />
+                </FlowPane.margin>
+            </Group>
+            <Group>
+                <Label layoutY="2.0" text="Подтип" />
+                <ChoiceBox id="Type" fx:id="choice5" layoutX="60.0" prefWidth="150.0" />
+                <FlowPane.margin>
+                    <Insets bottom="10.0" left="50.0" right="5.0" top="10.0" />
+                </FlowPane.margin>
+            </Group>
+            <Group>
+                <Label layoutX="0.0380859375" layoutY="4.0" text="ТУ" />
+                <ChoiceBox id="DataSheet" fx:id="choice6" layoutX="25.0" prefWidth="150.0" />
+                <FlowPane.margin>
+                    <Insets bottom="10.0" left="50.0" right="5.0" top="10.0" />
+                </FlowPane.margin>
+            </Group>
+            <Group>
+                <Label layoutX="0.0380859375" layoutY="4.0" text="Типоразмер" />
+                <ChoiceBox id="TypeSize" fx:id="choice7" layoutX="90.0" prefWidth="150.0" />
+                <FlowPane.margin>
+                    <Insets bottom="10.0" left="50.0" right="5.0" top="10.0" />
+                </FlowPane.margin>
+            </Group>
+            <Group>
+                <CheckBox fx:id="checkTypeSize" mnemonicParsing="false" text="При записи брать типоразмер в скобки" />
+                <FlowPane.margin>
+                    <Insets bottom="10.0" left="50.0" right="5.0" top="10.0" />
+                </FlowPane.margin>
+            </Group>
+        </FlowPane>
+        <Pane fx:id="editorPane" layoutX="515.0" layoutY="232.0" prefHeight="55.0" prefWidth="800.0" AnchorPane.bottomAnchor="310.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="230.0">
+            <!--<Button fx:id="btnOpenViewEditElemTypes" layoutX="50.0" layoutY="20.0" mnemonicParsing="false"
+                    text="Окно настройки типов элементов"/>-->
+            <Button fx:id="btnOpenViewEditNods" disable="true" layoutX="310.0" layoutY="20.0" mnemonicParsing="false" text="Окно настройки узлов" />
+            <Button fx:id="btnOpenViewCheck" layoutX="490.0" layoutY="20.0" mnemonicParsing="false" text="Окно проверки результатов элементов" />
+        </Pane>
+
+        <Pane fx:id="surnamePane" disable="true" layoutX="328.0" layoutY="393.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="260.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="550.0" AnchorPane.topAnchor="290.0">
+            <!--<Button fx:id="btnOpenViewEditSurnames" layoutX="50.0" layoutY="10.0" mnemonicParsing="false"
+                    text="Настройка основной надписи"/>-->
+        </Pane>
+
+        <Pane fx:id="resultViewPane" disable="true" layoutX="467.0" layoutY="375.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="260.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="290.0">
+            <Button fx:id="btnOpenViewScroll" layoutX="25.0" layoutY="10.0" mnemonicParsing="false" text="Предпросмотр ПЭ3" />
+            <Button fx:id="btnOpenViewBill" layoutX="185.0" layoutY="10.0" mnemonicParsing="false" text="Предпросмотр ВП" />
+            <Button fx:id="btnOpenViewSpecific" layoutX="320.0" layoutY="10.0" mnemonicParsing="false" text="Предпросмотр спецификация" />
+        </Pane>
+
+        <Pane fx:id="saverPane" disable="true" layoutX="300.0" layoutY="392.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="210.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="340.0">
+            <TextField fx:id="txtFieldSaveFiles" layoutX="50.0" layoutY="10.0" prefHeight="25.0" prefWidth="450.0" />
+            <Button fx:id="btnSaveFiles" layoutX="515.0" layoutY="10.0" mnemonicParsing="false" text="Директория сохранения" />
+        </Pane>
+
+        <Separator layoutY="390.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+
+        <Label fx:id="userNotify" layoutX="300.0" layoutY="400.0" text="Ожидание действий пользователя." textFill="#0b9a1e" />
+
+        <Label fx:id="listProcesses" layoutX="50.0" layoutY="400.0" text="Выполняемые процессы:" />
+        <Label fx:id="textToUserActions" alignment="TOP_LEFT" layoutX="50.0" layoutY="430.0" prefHeight="160.0" prefWidth="700.0" text="Необходимые действия:" />
+        <Label fx:id="listOfUserActions" alignment="TOP_LEFT" layoutX="70.0" layoutY="450.0" prefHeight="160.0" prefWidth="700.0" text="Намжите &quot;Открыть&quot;, выберите XML файл." />
+    </AnchorPane>
+</VBox>

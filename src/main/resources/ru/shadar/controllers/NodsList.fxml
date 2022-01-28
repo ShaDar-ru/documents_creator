@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" >
+    <AnchorPane prefHeight="600.0" prefWidth="400.0">
+        <TableView fx:id="table" layoutX="30.0" layoutY="41.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+            <columns>
+                <TableColumn fx:id="colNodsPos" editable="false" prefWidth="166.0" text="Узел" />
+                <TableColumn fx:id="colNodsName" prefWidth="167.0" text="Наименование" />
+                <TableColumn fx:id="colNodsDecimal" prefWidth="138.0" text="Децимальный номер" />
+            </columns>
+        </TableView>
+        <Label layoutX="250.0" layoutY="14.0" text="Таблица узлов" AnchorPane.topAnchor="15.0" />
+    </AnchorPane>
+</VBox>
